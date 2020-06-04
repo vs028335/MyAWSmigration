@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="ts" class="com.Spring.LernSpring.springTest.TestSpring">
+	</bean>
+
+	<bean id="logers" class="com.Spring.LernSpring.Loggers.Loggers">
+	</bean>
+	
+	<bean id="tc" class="com.Spring.LernSpring.springTest.TestCall">
+		<property name="testspring" ref="ts"></property>
+	</bean>
+</beans>

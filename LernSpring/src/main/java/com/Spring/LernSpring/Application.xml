@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.Spring.LernSpring.SuryaBulb" id="sb"></bean>
+
+	<bean class="com.Spring.LernSpring.Lgbulb" id="lb"></bean>
+
+	<bean id="ss" class="com.Spring.LernSpring.Service">
+		<property name="bulbStruture" ref="lb" />
+	</bean>
+
+
+</beans>
