@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container container1"
+		style="width: 100%; height: 670px; background-image: url('pexels-photo-754082.jpeg')">
+		<div class="container container2"
+			style="width: 45%; background-color: #81878c; margin-top: 100px; height: 400px; border-radius: 70px">
+			<h1 style="text-align: center; padding-top: 21px">Welcome To
+				Sears Login Page</h1>
+			<form name="myForm" action="LoginController"
+				style="margin-left: 70px; font-size: 25px; margin-top: 40px; color: red">
+				<input type="text" name="name" id="username" placeholder="Username"
+					style="border-radius: 13px; margin-left: 45px; text-align: center;"><br>
+				<br>
+				<div id="error1"></div>
+				<input type="password" id="password" placeholder="Password"
+					name="pswd"
+					style="border-radius: 13px; margin-left: 45px; text-align: center;"><br>
+				<br>
+				<div id="error2"></div>
+				<input type="Submit" value="Login" id="submit"
+					style="width: 47%; border-radius: 27px; margin-left: 75px">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
