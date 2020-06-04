@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<style type="text/css">
+			.container
+			{
+				width: 100%;
+				height: 500px;
+				background-color: green;
+				/*margin-left: 500px*/;
+			}	
+		</style>
+		<script type="text/javascript">
+
+			var user_name=document.getElementById("usrn");	
+			var password=document.getElementById("pswd");
+			function validation() 
+			{
+				if(user_name.checkValidity() && password.checkValidity())
+					window.open("file:///E:/jquari/iter_pro.html");
+				else				
+					document.getElementById("demo").innerHTML="incurrect username or passwor";
+					
+			}
+		</script>
+</head>
+<body>
+		<div class="container">
+			<h1 style="text-align: center;font-size: 65px">The Login HTML Page</h1>
+
+		<form>
+		<span style="margin-left: 500px;font-size: 35px">USER_NAME:</span><input id="usrn" style="height: 30px;margin-bottom: 30px" type="text" name="username" placeholder="Enter the user name" required="VISHAL"><br>
+
+		<span style="margin-left: 500px;font-size: 35px">PASSWORD:</span><input id="pswd" style="margin-bottom: 30px;height: 30px" type="password" name="password" placeholder="Enter password" required="123456"><br>
+
+			<p id="demo"></p>
+				<input style="margin-left: 500px;height: 30px;font-size: 24px;width: 125px" type="submit" name="hello" onclick="validation()">				
+		</form>
+		</div>
+</body>
+</html>
